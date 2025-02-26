@@ -9731,3 +9731,13 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .home-slider.owl-carousel {
+      touch-action: pan-y !important;  /* Permite scroll vertical */
+    }
+    
+    .owl-carousel .owl-stage {
+      display: flex !important;
+      align-items: center !important;
+    }
+    
