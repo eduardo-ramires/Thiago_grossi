@@ -260,3 +260,15 @@
 
 })(jQuery);
 
+$(".home-slider").owlCarousel({
+	items: 1,
+	loop: true,
+	autoplay: true,
+	autoplayTimeout: 5000,
+	autoplayHoverPause: true,
+	smartSpeed: 1000,
+	touchDrag: true, // Permite toque
+	pullDrag: false, // Evita arrasto forçado
+	mouseDrag: true, // Permite arrasto com mouse
+  });
+
