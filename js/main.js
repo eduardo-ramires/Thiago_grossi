@@ -272,3 +272,14 @@ $(".home-slider").owlCarousel({
 	mouseDrag: true, // Permite arrasto com mouse
   });
 
+  (function moveWhatsappButtonOnScroll() {
+	var button = document.getElementById("whatsappButton");
+	if (!button || !window.scrollTopThreshold) return;
+	window.addEventListener("scroll", function scrollListener() {
+	  var winScroll =
+		document.body.scrollTop || document.documentElement.scrollTop;
+	  button.style.right =
+		winScroll > window.scrollTopThreshold ? "5rem" : ".8rem";
+	});
+  })();
+
